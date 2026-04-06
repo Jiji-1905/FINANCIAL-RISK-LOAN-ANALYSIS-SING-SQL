@@ -10,18 +10,18 @@
 
 ## 🧠 Project Overview
 
-This project focuses on analyzing **loan data** to identify financial risk patterns and support data-driven lending decisions.
+This project focuses on analyzing **loan data** to identify **financial risk patterns** and support data-driven lending decisions.
 
-A **Star Schema Data Warehouse** was built using SQL to transform raw loan data into a structured format for analysis.
+A **Data Warehouse (Star Schema)** was designed using SQL to transform raw loan data into a structured analytical model for efficient querying and reporting.
 
 ---
 
 ## 🎯 Objectives
 
-- Identify high-risk loan applicants  
-- Analyze loan approval and rejection patterns  
-- Segment customers based on income and credit history  
-- Support financial decision-making using data  
+* Identify **high-risk loan applicants**
+* Analyze **loan default patterns**
+* Segment customers based on **income and credit history**
+* Enable **data-driven financial decision-making**
 
 ---
 
@@ -44,106 +44,117 @@ Risk Analysis & Insights
 ## ⭐ Data Model (Star Schema)
 
 ### 🔹 Fact Table: FACT_LOAN
-- Loan_ID  
-- Customer_Key  
-- Property_Key  
-- Credit_Key  
-- ApplicantIncome  
-- CoapplicantIncome  
-- LoanAmount  
-- Loan_Amount_Term  
-- Loan_Status  
+
+* Loan_ID
+* Customer_Key
+* Property_Key
+* Credit_Key
+* ApplicantIncome
+* CoapplicantIncome
+* LoanAmount
+* Loan_Amount_Term
+* Loan_Status
 
 ### 🔹 Dimension Tables
 
 #### 👤 DIM_CUSTOMER
-- Customer_Key (Primary Key)  
-- Gender  
-- Married  
-- Dependents  
-- Education  
-- Self_Employed  
+
+* Customer_Key (PK)
+* Gender
+* Married
+* Dependents
+* Education
+* Self_Employed
 
 #### 🏠 DIM_PROPERTY
-- Property_Key (Primary Key)  
-- Property_Area  
+
+* Property_Key (PK)
+* Property_Area
 
 #### 📊 DIM_CREDIT
-- Credit_Key (Primary Key)  
-- Credit_History  
+
+* Credit_Key (PK)
+* Credit_History
 
 ---
 
 ## ⚙️ Key Features
 
-- Data Cleaning using SQL functions  
-- Surrogate Keys using ROW_NUMBER()  
-- Star Schema Data Modeling  
-- Primary & Foreign Key Constraints  
-- Financial Risk Analysis  
+* Data Cleaning using `COALESCE()` and transformations
+* Surrogate Keys using `ROW_NUMBER()`
+* Implementation of **Star Schema Data Warehouse**
+* Primary & Foreign Key constraints for data integrity
+* Financial Risk Analysis using SQL
 
 ---
 
 ## 💻 SQL Techniques Used
 
-- INNER JOIN  
-- SUM, COUNT (Aggregations)  
-- CASE Statements  
-- Window Functions (OVER)  
-- CTE (Common Table Expressions)  
-- Indexing & Constraints  
+* Joins (INNER JOIN)
+* Aggregations (`SUM`, `COUNT`)
+* Window Functions (`OVER`)
+* CASE Statements (Segmentation)
+* Common Table Expressions (CTEs)
+* Indexing & Constraints
 
 ---
 
 ## 📊 Analysis Performed
 
 ### 🔥 Default Rate Analysis
-Calculated percentage of loan approvals vs rejections  
+
+Calculated percentage of approved vs rejected loans
 
 ### 📊 Credit Risk Analysis
-Analyzed impact of credit history on loan approval  
+
+Evaluated impact of credit history on loan approval
 
 ### 💰 Income Segmentation
-Grouped applicants into Low, Medium, High income  
+
+Classified customers into Low, Medium, High income groups
 
 ### 🏠 Property Risk Analysis
-Evaluated risk across different property areas  
+
+Analyzed loan distribution and risk by property area
 
 ### ⚠️ High-Risk Customer Profiling
-Identified customer segments with highest defaults  
+
+Identified customer segments with highest default rates
 
 ---
 
 ## 📈 Key Insights
 
-- Customers with no credit history have higher default rates  
-- Low-income applicants show higher rejection probability  
-- Property location impacts financial risk  
-- Self-employed individuals show higher repayment variability  
+* Customers with **no credit history** have significantly higher default rates
+* **Low-income applicants** show higher loan rejection probability
+* Property location influences **financial risk exposure**
+* Self-employed individuals show **higher variability in repayment**
 
 ---
 
 ## 🧠 Skills Demonstrated
 
-- Advanced SQL  
-- Data Warehousing  
-- Financial Risk Analysis  
-- Data Cleaning & Transformation  
-- Business Insights  
+* Advanced SQL
+* Data Warehousing (Star Schema)
+* Financial Risk Analysis
+* Data Cleaning & Transformation
+* Business Insight Generation
 
 ---
 
 ## 🏆 Project Outcome
 
-Built a complete financial analytics solution using SQL and identified high-risk loan segments.
+* Built a complete **financial analytics solution using SQL**
+* Enabled identification of **high-risk loan segments**
+* Demonstrated real-world **banking analytics use case**
 
 ---
 
 ## 🚀 Future Improvements
 
-- Build Power BI dashboard  
-- Add machine learning model  
-- Automate ETL pipeline  
+* Build interactive dashboard using Power BI
+* Integrate Machine Learning for predictive risk modeling
+* Automate ETL pipeline
 
 ---
 
@@ -152,3 +163,4 @@ Built a complete financial analytics solution using SQL and identified high-risk
 **JIJI BABU**
 
 ---
+
