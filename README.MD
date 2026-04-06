@@ -152,6 +152,3 @@ Built a complete financial analytics solution using SQL and identified high-risk
 **JIJI BABU**
 
 ---
-
-
-If you like this project, give it a ⭐ on GitHub!
